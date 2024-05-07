@@ -902,6 +902,12 @@ header {
   .banner-desc .second-title {
     font-size: 20px;
   }
+  .contact-links {
+    margin-top: 25px;
+  }
+  .banner-desc {
+    margin-top: 155px;
+  }
 }
 .client-reviews {
   overflow: hidden;
