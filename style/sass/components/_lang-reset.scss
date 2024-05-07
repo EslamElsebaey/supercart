@@ -169,4 +169,23 @@ html[dir="ltr"] {
       padding-inline: 21px;
     }
   }
+
+  @media screen and (max-width : 360px) {
+    .contact-link{
+      padding-inline: 16px;
+    }
+    .about .para , .target-audience .para ,  .client-reviews .sub-title {
+      line-height: 1.4;
+    }
+    .component .para{
+      font-size: 17px;
+    }
+     .myTitle , .target-audience .myTitle{
+      line-height: 1.3;
+    }
+    .get-trial .sub-title{
+      font-size: 17px;
+      line-height: 1.3;
+    }
+  }
 }

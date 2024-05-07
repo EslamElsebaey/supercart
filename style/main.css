@@ -1896,4 +1896,22 @@ html[dir=ltr] .client-reviews .sub-title {
   html[dir=ltr] .contact-link {
     padding-inline: 21px;
   }
+}
+@media screen and (max-width: 360px) {
+  html[dir=ltr] .contact-link {
+    padding-inline: 16px;
+  }
+  html[dir=ltr] .about .para, html[dir=ltr] .target-audience .para, html[dir=ltr] .client-reviews .sub-title {
+    line-height: 1.4;
+  }
+  html[dir=ltr] .component .para {
+    font-size: 17px;
+  }
+  html[dir=ltr] .myTitle, html[dir=ltr] .target-audience .myTitle {
+    line-height: 1.3;
+  }
+  html[dir=ltr] .get-trial .sub-title {
+    font-size: 17px;
+    line-height: 1.3;
+  }
 }/*# sourceMappingURL=main.css.map */
