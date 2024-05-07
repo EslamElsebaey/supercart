@@ -1536,6 +1536,15 @@ header {
     grid-column: unset;
   }
 }
+@media screen and (max-width: 360px) {
+  .feature-item .title {
+    font-size: 17px;
+  }
+  .feature-item .para {
+    font-size: 15px;
+    line-height: 27px;
+  }
+}
 .contact {
   padding-top: 30px;
   padding-bottom: 50px;
