@@ -1,6 +1,9 @@
 $(window).on("load", function () {
   //  Preloader
   $(".preloader").fadeOut();
+  setTimeout(() => {
+    $(".challenges").addClass("overflow-visible");
+  }, 2000);
 
   // App screens Swiper
   const appScreens = new Swiper(".app-screens .swiper", {

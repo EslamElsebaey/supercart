@@ -897,7 +897,7 @@ header {
 }
 .client-reviews .swiper {
   padding-block: 35px;
-  padding-inline: 22px;
+  padding-inline: 25px;
 }
 .client-reviews .reviewer {
   display: flex;
@@ -1145,7 +1145,6 @@ header {
 }
 .challenges {
   padding: 95px 0 170px 0;
-  overflow: visible;
   background-image: url(../images/challenges-bg.jpg);
   background-size: cover;
   background-position: 0 0;
