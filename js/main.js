@@ -95,7 +95,7 @@ $(window).on("load", function () {
   }
   if ($(window).width() < 768) {
     $(".get-trial .myTitle").attr("data-aos", "fade-down");
-    $(".get-trial .sub-title").attr("data-aos", "fade-down");
+    $(".get-trial .sub-title").attr("data-aos", "fade-up");
   }
 
   //  AOS animation
