@@ -1,0 +1,134 @@
+.challenges {
+  padding: 95px 0 170px 0;
+  overflow: visible;
+  // height: 715px;
+  background-image: url(../images/challenges-bg.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  .sub-title {
+    color: #e46d24;
+    margin-bottom: 18px;
+    text-align: start;
+  }
+  .title {
+    color: #26324e;
+    margin-bottom: 30px;
+  }
+  .content {
+    margin-inline-start: auto;
+    width: 470px;
+  }
+  .container {
+    position: relative;
+  }
+}
+
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  li {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    .li-title {
+      font-size: 18px;
+      color: #26324e;
+      font-weight: 400;
+    }
+    .fa-regular {
+      font-size: 18px;
+      color: #e46d24;
+    }
+  }
+}
+
+.supercart-box {
+  background-image: url(../images/cta-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  height: 300px;
+  background-color: #e46d24;
+  position: absolute;
+  bottom: -390px;
+  width: 100%;
+  left: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  .contact-links a.solid {
+    background-color: #fff;
+    color: #e46d24;
+    border: 2px solid transparent;
+    &:hover {
+      //    background-color: $blue-color;
+      transform: scale(1.05);
+      box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .contact-links {
+    margin-top: 35px;
+  }
+  .myTitle {
+    text-align: center;
+  }
+}
+
+@include max-1200 {
+  .supercart-box {
+    bottom: -360px;
+  }
+}
+
+@include max-992 {
+  .supercart-box {
+    height: auto;
+    padding: 60px 0;
+    bottom: -315px;
+  }
+}
+
+@include max-768 {
+  .challenges .content {
+    margin-inline-start: unset;
+    width: 100%;
+  }
+  .challenges {
+    padding-top: 50px;
+    padding-bottom: 155px;
+    background-position: 45%;
+  }
+  .challenges-list {
+    gap: 15px;
+  }
+  .challenges-list li {
+    gap: 15px;
+  }
+  .supercart-box {
+    height: auto;
+    padding-block: 40px;
+    padding-inline: 15px;
+    bottom: -275px;
+    width: calc(100% - 40px);
+    left: 50%;
+    transform: translateX(-50%);
+    .contact-links a {
+      font-size: 17px;
+      width: 200px;
+      max-width: 100%;
+    }
+  }
+  .supercart-box .contact-links {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .supercart-box {
+    padding-inline: 12px;
+  }
+}

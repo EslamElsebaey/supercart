@@ -1,0 +1,96 @@
+.target-audience {
+  padding: 110px 0 130px 0;
+  height: 636px;
+  background-image: url(../images/target-aud-bg.jpg);
+  background-size: cover;
+  background-position: 0 0;
+  .sub-title {
+    color: #8c9cc0;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .content {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .myTitle {
+    margin-bottom: 22px;
+  }
+  .para {
+    font-size: 28px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+}
+
+.target-cats-parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 12px;
+  .target-cat {
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+  }
+  .title {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+  .icon-holder {
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e46d24;
+    .fa-regular {
+      font-size: 24px;
+      color: #ffffff;
+    }
+  }
+}
+
+@include max-992 {
+  .target-audience .para {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+  .target-audience {
+    height: auto;
+  }
+  .target-audience .content {
+    width: 555px;
+  }
+}
+
+@include max-768 {
+  .target-cats-parent .target-cat {
+    column-gap: 18px;
+  }
+  .target-audience .content {
+    width: 100%;
+  }
+  .target-cats-parent {
+    grid-template-columns: 1fr;
+  }
+  .target-audience {
+    padding: 50px 0 60px 0;
+    background-position: 40%;
+  }
+  .target-audience .para {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .target-cats-parent .icon-holder {
+    width: 50px;
+    height: 50px;
+  }
+  .target-cats-parent .icon-holder .fa-regular {
+    font-size: 20px;
+  }
+}

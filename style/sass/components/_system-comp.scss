@@ -1,0 +1,148 @@
+.system-components {
+  padding-top: 290px;
+  padding-bottom: 120px;
+}
+.component {
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .myTitle {
+    margin-bottom: 25px;
+    color: #26324e;
+  }
+  .para {
+    width: 508px;
+    font-size: 24px;
+    line-height: 40px;
+    color: #26324e;
+    font-weight: 400;
+  }
+  .img-holder-bg {
+    background-image: url(../images/component-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 503px;
+    img {
+      width: 540px;
+    }
+  }
+}
+
+.text-desc {
+  width: 500px;
+}
+
+.component:nth-of-type(2) {
+  margin-top: 55px;
+}
+.component:nth-of-type(3) {
+  margin-top: 110px;
+}
+.component:nth-of-type(4) {
+  margin-top: 130px;
+}
+
+.component:nth-of-type(even) .content {
+  flex-direction: row-reverse;
+}
+
+.component:nth-of-type(3) .img-holder {
+  img {
+    width: 524px;
+  }
+}
+.component:nth-of-type(4) {
+  .img-holder {
+    img {
+      width: 533px;
+    }
+  }
+  .img-holder-bg {
+    background-position: 0 85px;
+  }
+}
+
+@include max-1200 {
+  .component .img-holder-bg img {
+    width: 350px;
+  }
+  .component .img-holder-bg {
+    background-size: 350px;
+  }
+  .component:nth-of-type(3) .img-holder img {
+    width: 400px;
+  }
+  .component:nth-of-type(4) .img-holder img {
+    width: 380px;
+  }
+  .component:nth-of-type(4) {
+    margin-top: 100px;
+  }
+}
+
+@include max-992 {
+  .component .content,
+  .component:nth-of-type(even) .content {
+    flex-direction: column;
+  }
+  .system-components {
+    padding-top: 250px;
+  }
+  .component:nth-of-type(3),
+  .component:nth-of-type(4) {
+    margin-top: 80px;
+  }
+  .text-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .component .content {
+    row-gap: 50px;
+  }
+  .component .img-holder-bg img {
+    width: 400px;
+  }
+  .component .para {
+    width: 100%;
+    text-align: center;
+  }
+  .component .myTitle {
+    text-align: center;
+  }
+}
+
+@include max-768 {
+  .system-components {
+    padding-top: 185px;
+    padding-bottom: 60px;
+  }
+  .component .para {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .component .img-holder-bg img,
+  .component:nth-of-type(3) .img-holder img,
+  .component:nth-of-type(4) .img-holder img {
+    width: 300px;
+  }
+  .component .img-holder-bg {
+    background-size: 260px;
+  }
+  .component .content {
+    row-gap: 40px;
+  }
+  .component .myTitle {
+    margin-bottom: 15px;
+  }
+  .component:nth-of-type(3),
+  .component:nth-of-type(4) {
+    margin-top: 50px;
+  }
+  .component:nth-of-type(4) .img-holder-bg {
+    background-position: 0 40px;
+  }
+}
