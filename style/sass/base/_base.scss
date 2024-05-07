@@ -205,7 +205,7 @@ button {
 
 @include max-768 {
   .myTitle {
-    font-size: 22px;
+    font-size: 21px;
   }
   .mobile,
   .whatsapp {
@@ -221,5 +221,12 @@ button {
   }
   .whatsapp .icon {
     font-size: 24px;
+  }
+}
+
+
+@media screen and (max-width : 360px) {
+  .sub-title{
+    font-size: 19px;
   }
 }

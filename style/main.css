@@ -260,7 +260,7 @@ button:focus {
 }
 @media only screen and (max-width: 767px) {
   .myTitle {
-    font-size: 22px;
+    font-size: 21px;
   }
   .mobile,
   .whatsapp {
@@ -276,6 +276,11 @@ button:focus {
   }
   .whatsapp .icon {
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .sub-title {
+    font-size: 19px;
   }
 }
 .about {
@@ -632,6 +637,11 @@ header {
   color: #e46d24;
 }
 
+@media screen and (max-width: 360px) {
+  .contact-link {
+    padding-inline: 20px;
+  }
+}
 .mainBanner {
   height: 100vh;
   overflow: hidden;
@@ -883,8 +893,14 @@ header {
 @media screen and (max-width: 360px) {
   .hero-mobile {
     bottom: -10px;
-    inset-inline-end: -48px;
-    width: 320px;
+    inset-inline-end: -25px;
+    width: 300px;
+  }
+  .banner-desc .main-title {
+    font-size: 24px;
+  }
+  .banner-desc .second-title {
+    font-size: 20px;
   }
 }
 .client-reviews {
@@ -1023,6 +1039,9 @@ header {
   .client-reviews .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #e46d24;
     opacity: 1;
+  }
+  .client-reviews .item .quote-text {
+    line-height: 27px;
   }
   .client-reviews .swiper-slide-prev .item,
   .client-reviews .swiper-slide-next .item {
@@ -1405,6 +1424,7 @@ header {
   }
   .component .myTitle {
     margin-bottom: 15px;
+    width: 100%;
   }
   .component:nth-of-type(3),
   .component:nth-of-type(4) {
@@ -1665,6 +1685,14 @@ header {
     font-size: 19px;
     text-align: center;
     line-height: 1.6;
+  }
+}
+@media screen and (max-width: 360px) {
+  .get-trial .myTitle {
+    font-size: 22px;
+  }
+  .get-trial .sub-title {
+    font-size: 18px;
   }
 }
 footer {

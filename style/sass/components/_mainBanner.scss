@@ -261,7 +261,13 @@
 @media screen and (max-width: 360px) {
   .hero-mobile {
     bottom: -10px;
-    inset-inline-end: -48px;
-    width: 320px;
+    inset-inline-end: -25px;
+    width: 300px;
+  }
+  .banner-desc .main-title{
+    font-size: 24px;
+  }
+  .banner-desc .second-title{
+    font-size: 20px;
   }
 }
