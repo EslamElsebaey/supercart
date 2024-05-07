@@ -166,6 +166,10 @@ button:focus {
 }
 
 @keyframes progress {
+  from {
+    width: 0;
+    color: rgba(255, 255, 255, 0);
+  }
   to {
     width: 100%;
     color: rgb(255, 255, 255);

@@ -111,7 +111,9 @@ button {
   background-color: $orange-color;
 }
 @keyframes progress {
-  from {
+ from {
+    width: 0;
+    color: rgba(255, 255, 255, 0);
   }
   to {
     width: 100%;
