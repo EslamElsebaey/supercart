@@ -64,8 +64,10 @@
     border: 2px solid transparent;
     &:hover {
       //    background-color: $blue-color;
-      transform: scale(1.05);
-      box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+      // transform: scale(1.05);
+      // box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+      background-color: #ffa268;
+    color: #fff;
     }
   }
   .contact-links {
@@ -110,7 +112,7 @@
     height: auto;
     padding-block: 40px;
     padding-inline: 15px;
-    bottom: -275px;
+    bottom: -350px;
     width: calc(100% - 40px);
     left: 50%;
     transform: translateX(-50%);
@@ -118,11 +120,14 @@
       font-size: 17px;
       width: 200px;
       max-width: 100%;
+      height: 54px;
     }
   }
   .supercart-box .contact-links {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 25px;
+    flex-direction: column;
+    row-gap: 20px;
     justify-content: center;
   }
 }

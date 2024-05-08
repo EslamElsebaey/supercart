@@ -39,12 +39,14 @@ header {
   background-color: rgba($color: #fff, $alpha: 0.9);
   .contact-link {
     &:hover {
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      background-color: $blue-color;
+      color: #fff;
+      // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      //   rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     }
   }
   .openBtn i {
-    color: $orange-color;
+    color: $blue-color;
   }
   .big-menu li a {
     color: $blue-color;

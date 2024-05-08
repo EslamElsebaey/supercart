@@ -146,6 +146,7 @@ $(document).ready(function () {
   let openBtn = $(".openBtn");
 
   openBtn.on("click", function () {
+    $(".toTop").toggle()
     if ($(window).width() < 992) {
       if ($(window).scrollTop() > 100) {
         if (!$("body").hasClass("pages-body")) {
@@ -173,6 +174,7 @@ $(document).ready(function () {
 
   if ($(window).width() < 992) {
     $(".big-menu li a").on("click", function () {
+      $(".toTop").show();
       $(".navigation").slideUp(400);
       $("header").removeClass("header-mob");
       $(".openBtn i").removeClass("fa-xmark");

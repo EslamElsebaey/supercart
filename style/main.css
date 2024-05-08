@@ -210,7 +210,7 @@ button:focus {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  z-index: 10;
+  z-index: 100;
   row-gap: 10px;
 }
 
@@ -262,20 +262,9 @@ button:focus {
   .myTitle {
     font-size: 21px;
   }
-  .mobile,
-  .whatsapp {
-    width: 40px;
-    height: 40px;
-  }
   .container {
     padding-right: 20px;
     padding-left: 20px;
-  }
-  .mobile .icon {
-    font-size: 23px;
-  }
-  .whatsapp .icon {
-    font-size: 24px;
   }
 }
 @media screen and (max-width: 360px) {
@@ -433,10 +422,11 @@ header {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .blur-header .contact-link:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  background-color: #26324e;
+  color: #fff;
 }
 .blur-header .openBtn i {
-  color: #e46d24;
+  color: #26324e;
 }
 .blur-header .big-menu li a {
   color: #26324e;
@@ -1234,8 +1224,8 @@ header {
   border: 2px solid transparent;
 }
 .supercart-box .contact-links a.solid:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  background-color: #ffa268;
+  color: #fff;
 }
 .supercart-box .contact-links {
   margin-top: 35px;
@@ -1276,7 +1266,7 @@ header {
     height: auto;
     padding-block: 40px;
     padding-inline: 15px;
-    bottom: -275px;
+    bottom: -350px;
     width: calc(100% - 40px);
     left: 50%;
     transform: translateX(-50%);
@@ -1285,10 +1275,13 @@ header {
     font-size: 17px;
     width: 200px;
     max-width: 100%;
+    height: 54px;
   }
   .supercart-box .contact-links {
     width: 100%;
-    margin-top: 30px;
+    margin-top: 25px;
+    flex-direction: column;
+    row-gap: 20px;
     justify-content: center;
   }
 }
@@ -1333,7 +1326,7 @@ header {
 }
 
 .component:nth-of-type(2) {
-  margin-top: 55px;
+  margin-top: 80px;
 }
 
 .component:nth-of-type(3) {
@@ -1410,7 +1403,7 @@ header {
 }
 @media only screen and (max-width: 767px) {
   .system-components {
-    padding-top: 185px;
+    padding-top: 245px;
     padding-bottom: 60px;
   }
   .component .para {
@@ -1426,7 +1419,7 @@ header {
     background-size: 260px;
   }
   .component .content {
-    row-gap: 40px;
+    row-gap: 20px;
   }
   .component .myTitle {
     margin-bottom: 15px;
@@ -1521,7 +1514,7 @@ header {
     row-gap: 45px;
   }
   .features {
-    padding: 50px 0 60px 0;
+    padding: 80px 0 60px 0;
   }
   .features .sub-title {
     font-size: 18px;
@@ -1618,7 +1611,7 @@ header {
 .form-div .field input:focus,
 .form-div .field textarea:focus {
   outline: none;
-  border-color: #26324e;
+  border-color: #e46d24;
 }
 .form-div .field textarea {
   min-height: 80px;
@@ -1896,7 +1889,7 @@ html[dir=ltr] .client-reviews .sub-title {
     line-height: 1.4;
   }
   html[dir=ltr] .supercart-box {
-    bottom: -275px;
+    bottom: -340px;
   }
   html[dir=ltr] .client-reviews .sub-title {
     line-height: 1.5;

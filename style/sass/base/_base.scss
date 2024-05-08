@@ -157,7 +157,7 @@ button {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  z-index: 10;
+  z-index: 100;
   row-gap: 10px;
 }
 
@@ -207,21 +207,12 @@ button {
   .myTitle {
     font-size: 21px;
   }
-  .mobile,
-  .whatsapp {
-    width: 40px;
-    height: 40px;
-  }
+
   .container {
     padding-right: 20px;
     padding-left: 20px;
   }
-  .mobile .icon {
-    font-size: 23px;
-  }
-  .whatsapp .icon {
-    font-size: 24px;
-  }
+
 }
 
 
